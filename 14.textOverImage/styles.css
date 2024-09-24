@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* Import whimsical font */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Pacifico', cursive;  /* Whimsical font */
+}
+
+.background-image {
+    background-image: url('images/lyric01.jpg');
+    background-size: cover;  /* Ensures the image covers the entire screen */
+    background-position: center;
+    height: 100vh;  /* Full height of the viewport */
+    width: 100vw;  /* Full width of the viewport */
+    position: relative;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centers the text */
+    background-color: white;  /* White text box */
+    color: pink;  /* Pink text */
+    padding: 30px;
+    font-size: 36px;  /* Larger text */
+    font-weight: bold;  /* Bold text */
+    text-align: center;
+    border-radius: 10px; /* Optional: adds rounded corners to the text box */
+}
