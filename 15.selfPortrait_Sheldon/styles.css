@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.full-screen-image {
+    background-image: url('images/self_portrait.jpg');
+    background-size: cover;  /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: relative; /* Enables positioning of the text box */
+}
+
+.text-box {
+    position: absolute;
+    bottom: 20px; /* Positions the text box 20px above the bottom edge */
+    left: 50%; /* Centers the text box horizontally */
+    transform: translateX(-50%); /* Adjusts the text box to be perfectly centered */
+    background-color: white; /* White background for the text box */
+    padding: 15px 30px; /* Padding inside the text box */
+    font-size: 24px; /* Size of the text */
+    font-weight: bold; /* Makes the text bold */
+    color: black; /* Text color */
+    border-radius: 8px; /* Rounded corners for the text box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+    text-align: center; /* Centers text in the box */
+}
