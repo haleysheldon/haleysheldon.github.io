@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.full-screen-image {
+    background-image: url('images/dinoStocks.jpg');
+    background-size: cover;  /* Ensures the image covers the entire viewport */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    position: relative; /* Enables positioning of the text box */
+}
+
+.quote-box {
+    position: absolute;
+    bottom: 15%; /* Places the box in the lower third of the page */
+    left: 50%;
+    transform: translateX(-50%); /* Centers the text box horizontally */
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    padding: 20px 40px; /* Padding inside the text box */
+    font-size: 24px; /* Font size for the quote */
+    font-style: italic; /* Italicizes the text */
+    font-family: 'Georgia', serif; /* Font choice for the quote */
+    color: black; /* Text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for emphasis */
+    width: 60%; /* Width of the text box */
+    text-align: center; /* Centers the text inside the box */
+}
