@@ -1,0 +1,31 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: flex-end; /* Align content to the bottom */
+    justify-content: center; /* Center horizontally */
+    overflow: hidden;
+}
+
+#full-screen-image {
+    position: absolute; /* Positioning the image absolutely */
+    top: 50%; /* Center the image vertically */
+    left: 50%; /* Center the image horizontally */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: cover; /* Cover the entire viewport */
+    transform: translate(-50%, -50%); /* Center the image */
+    cursor: pointer; /* Change cursor to indicate clickability */
+}
+
+#text-box {
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for readability */
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    text-align: center;
+    width: 80%;
+    margin-bottom: 20px; /* Spacing from the bottom */
+    position: relative;
+    z-index: 1; /* Ensure text is above the image */
+}
