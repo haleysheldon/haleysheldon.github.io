@@ -1,0 +1,42 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Cinzel', serif; /* Set main font to Cinzel */
+    background-size: cover; /* Fullscreen background */
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: background-image 1s ease-in-out; /* Smooth background change */
+}
+
+/* Container for the scrollable sections */
+.scroll-container {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* Each text section takes up the full height of the viewport */
+.text-box {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for readability */
+}
+
+/* Styling for section headings and paragraphs */
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
