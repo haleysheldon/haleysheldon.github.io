@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Switcher with Persistent Audio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Video element -->
+        <video id="videoPlayer" autoplay muted>
+            <source src="videos/death.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <!-- Text box for interaction -->
+        <div id="textBox" class="text-box">Click to switch video</div>
+    </div>
+
+    <!-- Persistent background audio -->
+    <audio id="backgroundAudio" autoplay loop>
+        <source src="audio/heartbeat.wav" type="audio/wav">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- Include external JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
